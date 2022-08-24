@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Fatorial {
+    public static void main(String[] args) {
+        int numero;
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("Digite um numero para ser Fatorado: ");
+        numero = sc.nextInt();
+         System.out.println("O fatorial de " + numero + " e " + fatorial(numero) + ".");
+    }  
+    
+public static int fatorial(int num) {
+        if (num <= 1) {
+            return 1;
+        } else {
+            return fatorial(num - 1) * num;
+        }
+    }
+}
